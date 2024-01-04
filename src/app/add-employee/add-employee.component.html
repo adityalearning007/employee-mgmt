@@ -1,0 +1,42 @@
+<!-- Reactive Form -->
+
+<form [formGroup]="basicForm" (ngSubmit)="getReactiveFormData()">
+    <div class="row">
+        <div class="col-md-4">
+            <label>First Name</label>
+            <input name="firstName" formControlName="firstName" type="text" placeholder="First Name" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label>Last Name</label>
+            <input name="lastName" formControlName="lastName"  type="text" placeholder="Last Name " class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label>Contact</label>
+            <input name="contact" formControlName="contact"  type="text" placeholder="Contact" class="form-control">
+        </div>
+        <!-- <div class="col-md-4">
+            <br />
+            <button class="btn btn-primary">Save</button>
+        </div> -->
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <label>Address</label>
+            <input name="address" formControlName="address" type="text" placeholder="Address" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label>Department</label>
+            <input name="Department" formControlName="department"  type="text" placeholder="Department" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label>Joining Date</label>
+            <input name="doj" formControlName="doj"  type="date" placeholder="Date of Joining" class="form-control">
+        </div>       
+    </div>
+    <div class="row">
+         <div class="col-md-4">
+            <br />
+            <button class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>

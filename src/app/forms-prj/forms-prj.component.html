@@ -1,0 +1,42 @@
+<!-- <form #basicForm="ngForm" (ngSubmit)="getFormData(basicForm.value)">
+    <div class="row">
+        <div class="col-md-4">
+            <label>Name</label>
+            <input  ngModel type="text" placeholder="" class="form-control" name="Fullname">
+        </div>
+        <div class="col-md-4">
+            <label>contact</label>
+            <input ngModel type="number" placeholder="" class="form-control" name="contact">
+        </div>
+        <div class="col-md-4">
+            <br />
+            <button class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>
+
+<br/>
+<div>
+    <span><b>Full Name</b></span>  : {{fullName}}  <br/>
+    <span><b>Contact</b></span>  :   {{Contact}}
+</div> -->
+
+
+<form [formGroup]="basicForm" (ngSubmit)="getReactiveFormData()">
+    <div class="row">
+        <div class="col-md-4">
+            <label>Name</label>
+            <input name="fullName" formControlName="fullName" type="text" placeholder="Enter full name" class="form-control">
+        </div>
+        <div class="col-md-4">
+            <label>contact</label>
+            <input name="contact" formControlName="contact"  type="number" placeholder="Enter contact no." class="form-control">
+        </div>
+        <div class="col-md-4">
+            <br />
+            <button class="btn btn-primary">Save</button>
+        </div>
+    </div>
+</form>
+
+
